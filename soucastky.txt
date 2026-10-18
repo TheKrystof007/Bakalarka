@@ -1,0 +1,7 @@
+BUCK
+3,3V … https://cz.mouser.com/cs/ProductDetail/Texas-Instruments/TLV62568PDRLT?qs=0C8XhJW8e4oKFfzu2XrS3g%3D%3D
+1,2V … stejný
+
+VOLTAGE LEVEL TRANSLATOR	
+4_pin … https://cz.mouser.com/cs/ProductDetail/Texas-Instruments/TXB0104RGYRG4?qs=oFXvjAmG9Eg6yzO5X4gyfg%3D%3D
+2_pin … https://cz.mouser.com/cs/ProductDetail/Texas-Instruments/TXB0102DCUR?qs=0OHPnBYoB%2FkdfwFK6IXZ5Q%3D%3D

@@ -1,0 +1,14 @@
+# KiCad zálohy a dočasné soubory (včetně podsložek)
+**/*-backups/
+**/backups/
+*.lck
+*.tmp
+_autosave-*
+fp-info-cache
+*.bak
+*.kicad_pcb-bak
+*.sch-bak
+
+# Dočasné soubory textových editorů a Wordu
+~$*.docx
+*.synctex.gz
