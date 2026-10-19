@@ -27,7 +27,7 @@ Repozitář je logicky rozdělen do následujících sekcí:
 
 ## ⚡ Návrh hardwaru (Custom PCB)
 
-Jelikož senzor **VL53L9CX** vyžaduje specifické napájení a komunikační rozhraní, byl pro něj navržen dedikovaný plošný spoj (Custom PCB). Návrh je optimalizován pro nasazení na dronu – využívá výhradně SMD součástky pro minimalizaci hmotnosti a rozměrů a konektor JST-GH s mechanickou západkou odolnou proti vibracím.
+Jelikož senzor **VL53L9CX** vyžaduje specifické napájení a komunikační rozhraní, navrhl jsem pro něj dedikovaný plošný spoj. Návrh je optimalizován pro nasazení na dron – požadované úrovně napětí je vůli snížení spotřeby docíleno využitím step-down měniče, využívá výhradně SMD součástky pro minimalizaci hmotnosti a rozměrů a konektor JST-GH s mechanickou západkou odolnou proti vibracím.
 
 ### Hlavní komponenty a princip fungování
 
@@ -39,8 +39,8 @@ Jelikož senzor **VL53L9CX** vyžaduje specifické napájení a komunikační ro
    * Senzor se vyznačuje vysokými a velmi rychlými špičkovými odběry (až stovky mA) během záblesků VCSEL laseru.
    * Z palubních 5 V dronu jsou lokálně generovány dvě nezávislé napěťové úrovně:
      * **3.3 V:** Pro analogové obvody (`AVDD`) a napájení laseru (`VBAT_LDD`, `VBAT_RX`).
-     * **1.2 V:** Pro digitální jádro senzoru (`DVDD`).
-   * Použití vysoce účinných buck měničů místo lineárních LDO stabilizátorů bylo zvoleno pro minimalizaci generovaného tepla, což je pro přesnost dToF senzorů kritické.
+     * **1.2 V:** Pro digitální jádro senzoru (`DVDD`) a komunikaci s Masterem (`IOVDD`).
+   * Použití vysoce účinných buck měničů místo lineárních LDO stabilizátorů bylo zvoleno pro minimalizaci generovaného tepla a energetické spotřeby, což je pro přesnost dToF senzorů kritické.
 
 3. **Převodníky logických úrovní (Level Shifters U4, U5):**
    * Piny senzoru pracují primárně na 1.2V logice (pin `IOVDD`), zatímco hlavní řídicí jednotka dronu obvykle využívá 3.3V logiku.
@@ -69,8 +69,9 @@ Při návrhu plošného spoje byla striktně dodržována následující aplika�
 ## 🚀 Budoucí cíle (Roadmap)
 
 **Fáze 1: Hardware a PCB**
-- [x] Návrh elektrického schématu a kontrola pravidel (ERC)
-- [x] Výběr vhodných SMD komponent a přiřazení pouzder (Footprints)
+- [ ] Návrh elektrického schématu a kontrola pravidel (ERC)
+   - [ ] Přidání kontrolních LED
+- [ ] Výběr vhodných SMD komponent a přiřazení pouzder (Footprints)
 - [ ] Návrh plošného spoje (Routing & Layout)
   - [ ] *Návrh souvislé GND plochy pro odvod tepla a minimalizaci rušení*
   - [ ] *Optimalizace "hot loops" pro step-down měniče*
