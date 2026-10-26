@@ -4871,6 +4871,10 @@
 		(uuid "00422f58-e960-4fdb-8b8b-e42fcb70bcc0")
 	)
 	(no_connect
+		(at 39.37 132.08)
+		(uuid "0364c822-eb46-41dd-a50a-e63a9f1e9f9c")
+	)
+	(no_connect
 		(at 22.86 161.29)
 		(uuid "0741bbbf-f594-4ae3-91d1-d6a0ca6f7647")
 	)
@@ -4885,6 +4889,10 @@
 	(no_connect
 		(at 237.49 96.52)
 		(uuid "1cd8dced-177f-4cd1-82d9-2502c739cafe")
+	)
+	(no_connect
+		(at 39.37 139.7)
+		(uuid "21682a7b-d9b3-4805-bd6d-60755a920bf5")
 	)
 	(no_connect
 		(at 22.86 171.45)
@@ -6922,7 +6930,7 @@
 		)
 		(uuid "7b7e4cd4-ccc5-49f0-a080-d2534e8bb954")
 	)
-	(label "3.3V"
+	(label "5V"
 		(at 68.58 165.1 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7054,7 +7062,7 @@
 		)
 		(uuid "e300ed5d-73f4-438c-b0fd-e31d34502d85")
 	)
-	(label "3.3V"
+	(label "5V"
 		(at 83.82 135.89 0)
 		(fields_autoplaced yes)
 		(effects
@@ -10623,6 +10631,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 39.37 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "7c4aae26-c030-44b6-90ee-ac4bdc7d6ca0")
+		(property "Reference" "R16"
+			(at 41.91 134.6199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33"
+			(at 41.91 137.1599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 37.592 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 39.37 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "YAGEO"
+			(at 39.37 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CFR25SJT-52-33R"
+			(at 39.37 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" "https://mou.sr/4iG84Ew"
+			(at 39.37 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "730adef8-08d4-4a8a-b1f8-88242629f91e")
+		)
+		(pin "1"
+			(uuid "901516ba-a42a-47d3-8549-9d3f916e47a9")
+		)
+		(instances
+			(project ""
+				(path "/9ae613d0-8493-439f-a7ae-e77ae566ef2b"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 100.33 187.96 0)
 		(unit 1)
@@ -11148,7 +11253,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "RC0603FR-07499KL"
+		(property "MP" "RC0603FR-07100KL"
 			(at 83.82 91.44 0)
 			(effects
 				(font
@@ -11166,7 +11271,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase-URL" "https://mou.sr/4iFdRdB"
+		(property "Purchase-URL" "https://mou.sr/4BIYvMX"
 			(at 83.82 91.44 0)
 			(effects
 				(font
@@ -14318,7 +14423,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "RC0603FR-07499KL"
+		(property "MP" "RC0603FR-07100KL"
 			(at 82.55 38.1 0)
 			(effects
 				(font
@@ -14336,7 +14441,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase-URL" "https://mou.sr/4iFdRdB"
+		(property "Purchase-URL" "https://mou.sr/4BIYvMX"
 			(at 82.55 38.1 0)
 			(effects
 				(font
