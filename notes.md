@@ -1,20 +1,25 @@
+
 # NOTES
 
-* tento dokument je vytvořený pouze pro ukládání dat které díky mojí paměti zlaté rybičky nedokážu udržet v hlavě. Nejspíš nebude dobře strukturovaný a je možné, že bude obsahovat chyby, gramatické chyby, nedokonlosti a vulgarizmy. 
+** tento dokument je vytvořený pouze pro ukládání dat které díky mojí paměti zlaté rybičky nedokážu udržet v hlavě. Nejspíš nebude dobře strukturovaný a je možné, že bude obsahovat chyby, gramatické chyby, nedokonlosti a vulgarizmy. **
 
+# Obsah
+- [Tahák Markdown](#tahák-markdown)
+    - [Základní formátování](#základní-formátování)
+    - [Seznamy a odškrtávací body](#seznamy-a-odškrtávací-body)
+    - [Bloky kódu](#bloky-kódu)
+    - [Tabulky](#tabulky)
+    - [Grafy a diagramy (Mermaid)](#grafy-a-diagramy-mermaid)
+    - [Matematika (LaTeX)](#matematika-latex)
+    - [Další vychytávky](#další-vychytávky)
+- [Hardware](#hardware)
+- [Software](#software)
+
+---
 
 # Tahák Markdown
 
-## Obsah
-- [Základní formátování](#základní-formátování)
-- [Seznamy a odškrtávací body](#seznamy-a-odškrtávací-body)
-- [Bloky kódu](#bloky-kódu)
-- [Tabulky](#tabulky)
-- [Grafy a diagramy (Mermaid)](#grafy-a-diagramy-mermaid)
-- [Matematika (LaTeX)](#matematika-latex)
-- [Další vychytávky](#další-vychytávky)
-
----
+Nápověda pro práci s Markdown. Popisuje základní symtax a pojmy formátu.
 
 ## Základní formátování
 
@@ -133,6 +138,8 @@ Tady může být jakýkoliv Markdown text, kód nebo obrázek (nech prázdný ř
 > [!WARNING]
 > Varování před chybou nebo problémem.
 
+
+
 **Poznámka pod čarou:**
 Text s odkazem na poznámku[^1].
 
@@ -154,7 +161,7 @@ zluta … https://cz.mouser.com/en/ProductDetail/LITEON/LTST-C190KSKT?qs=ebQBSva
 zelena … https://cz.mouser.com/en/ProductDetail/LITEON/LTST-C190KGKT?qs=205qCy6M2Q%252BAdcgwUZktqw%3D%3D
 
 
- --- POZNÁMKY ---
+## poznámky
 
 - piny pro logiku a vykonnou část je dostatecne deleni (více by bylo zbytečné)
 - kabely na nucleo napajet a k PCB je pripojit konektorem JST-GH (koupit 10pin s druhou stranou volnou a dostatecne dlouhy kabel, aby se dal zkratit pa nozadovanou delku a zakroutit
@@ -162,16 +169,16 @@ zelena … https://cz.mouser.com/en/ProductDetail/LITEON/LTST-C190KGKT?qs=205qCy
 - PG je 3,3V pokud buck dava vice jak 95% pozadovane hodnoty a 0V pokud tam je pod 90% 
 - u 4 pin transformatoru napeti si musim kontrolovat zda piny sedi s tim co obednavam. Muze se to menit. 
 
-
- --- TO DO ---
+## TO DO
 
 - Je potřeba nastavit R15 a C12 … kdyby tam nebyl ten odpor tak by mohl kondenzátor rozkmitat 
 
- --- KICAD ---
+## KiCad poznámky
 
 - d … posunuti dratu
 - e … nastavení
 - b … zaplnění oblastí 
+
 
 # SOFTWARE
 
@@ -179,4 +186,14 @@ zelena … https://cz.mouser.com/en/ProductDetail/LITEON/LTST-C190KGKT?qs=205qCy
 
 Hodně tématy jsem si tady nebyl jiśtý a tak si budu nejprve zapisovat nestrukturovane informace a potom to zmenim do nejakeho navodu, typů, věcí co jsou důležité a potřebné dovysvětlit
 
-### Dočasný seznam
+## Linux a prikazy v terminalu
+
+- "tmux ls" ... vypise mi bezici tmux relace
+- "tmux attach" ... pripojeni se do bezici relace tmux
+- ctrl+c a potom "tmux kill-server" ... vypne to aktualni beh tmuxu (vypne symulaci)
+- "cd /opt/ros/jazzy/share/mrs_multirotor_simulator/tmux/mrs_one_drone
+./start.sh" ... zapne symulaci (presune se to do dir, kde je zkompilovaný program pro symulaci a dron. 
+
+## Dočasný seznam
+- vyuziva se ubuntu jelikoz nejlepe komunikujje s ROS 2 (robot operating system)
+- ve slozce "/opt/ros/jazzy/" josu zkompilovane binarky
